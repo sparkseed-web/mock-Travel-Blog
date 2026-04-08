@@ -1,0 +1,328 @@
+@charset "UTF-8";
+
+/* common */
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* header */
+
+header nav {
+    background-color: black;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+    overflow: auto;
+}
+
+.logo img {
+    width: 145px;
+    margin: 20px 0 15px 0px;
+}
+
+.nav_ul {
+    display: flex;
+    font-size: 15px;
+    background-color: rgb(54, 54, 54);
+    color: rgb(250, 250, 250);
+}
+
+.nav_ul li {
+    margin: 10px 60px 10px 0;
+}
+
+.nav_ul li:first-child {
+    margin-left: 16px;
+}
+
+
+/* main */
+
+    /* pickup */
+
+
+    .pickup_list {
+        display: flex;
+        margin-top: 40px;
+        
+    }
+
+    .pickup_list .read_more {
+        padding-top:20px;
+    }
+
+    .pickup_list li {
+        margin-right: 25px;
+    }
+
+    .pickup_list li:last-child {
+        margin-right: 0;
+    }
+    
+    .pickup_list h4 {
+        margin-top: 10px;
+    }
+
+    .read_more{
+        position: relative;
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+
+    .read_more::before {
+        content: "";
+        position: absolute;
+        width: 75px;
+        height: 1px;
+        background-color: rgb(54, 54, 54);
+        bottom: 0px;
+        transition: 0.5s;
+    }
+
+    .read_more:hover::before {
+        opacity: 0;
+        bottom: -10px;
+    }
+    
+    /* wrapper */
+    
+    .wrapper {
+        display: flex;
+        /* margin-top: 90px; */
+    }
+
+    .wrapper section .read_more{
+        
+        display: block;
+        text-align: center;
+    }
+
+    
+    /* .left_article */
+
+    .left_article h1 {
+        margin-top: 70px;
+    }
+
+    .left_article {
+        width: 65%;
+    }
+
+    .left_article section figcaption{
+        padding: 10px 30px 30px 30px;
+    }
+
+    .left_article h1 {
+        font-size: 25px;
+    }
+
+    .datetime , .sub_title {
+        margin-top: 15px;
+        font-size: 13px;
+        }
+
+    .datetime {
+        margin-right: 20px;
+    }
+
+    .left_article img {
+        margin-top: 10px;
+    }
+
+    /* .right_article */
+
+        .right_article {
+        width: 35%;  /*これをつけると日付の位置が変わってしまう */
+        padding: 0 40px;
+        margin-top: 70px;
+    }
+
+    .right_article h3 {
+        text-align: center;
+    }
+
+    .section_1 {
+        text-align: center;
+    }
+
+    .section_1 img {
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .name {
+        margin-top: 30px;
+    }
+
+    .section_1 p {
+        font-size: 14px;
+        margin-top: 30px;
+        text-align: left;
+    }
+    
+
+    .section_2 {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .section_2 h3 {
+        margin-top: 60px;
+    }
+
+    .section_2 img {
+        margin-top: 30px;
+    }
+
+    .section_3 h3 {
+        margin-top: 60px;
+    }
+
+    .section_3 time {
+        display: block;
+    }
+
+    .section_3 time {
+        font-size: 14px;
+        padding: 0 20px 20px 20px;
+        border-bottom: 1px solid rgb(68, 64, 64);
+    }
+
+    .section_3 time:first-of-type{
+        padding-top: 20px;
+        border-top: 1px solid  rgb(68, 64, 64);  /*   border-topが効いていない？ */
+    }
+
+
+
+ /* footer */
+
+    footer {
+        margin-top: 100px;
+        
+        font-size: 14px;
+        background-color: rgb(247, 243, 243);
+    }
+
+    footer .container {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    footer .inner {
+        padding-top: 50px;
+        width: calc(100%/3);
+        margin-right: 50px;
+    }
+
+    footer .title {
+        margin-bottom: 30px;
+    }
+
+    .ul1 {
+        margin-top: 20px;
+    }
+
+    .ul1 li {
+        margin-bottom: 5px;
+    }
+
+    .ul2 li {
+        padding: 15px ;
+        border-bottom: 1px solid rgb(54, 54, 54);
+    }
+
+    .ul2 li:first-child {
+        border-top: 1px solid rgb(54, 54, 54);
+    }
+
+    .triangle li{
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .triangle li::before{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top:50%;
+        left:-15px;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-bottom:  7px solid transparent;
+        border-left:    7px solid rgb(54, 54, 54)
+    }     /*   疑似要素を使って▲を描きたいけどうまくいかない*/
+    
+    small {
+        display: block;
+        text-align: center;
+        padding: 50px 0 10px 0;
+    }
+
+
+    /* レスポンシブ */
+
+    @media(max-width:767px){
+
+        .pickup_list {
+            display: block;
+            margin-top: 30px;
+        
+        }
+
+        .read_more {
+            margin: 15px 0 30px 0 ;
+        }
+
+        .wrapper {
+            display: block;
+            margin-top:0px;
+        }
+
+        .left_article {
+            width: 100%;
+        }
+
+        .right_article {
+            width: 100%;
+            padding: 0;
+        }
+
+        footer .container {
+            display: block;
+        }
+
+        footer .inner {
+            width: 100%;
+        }
+
+        }   
