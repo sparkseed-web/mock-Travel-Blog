@@ -13,5 +13,5 @@
 -  文字の下にデザイン性の高い下線を引くために、`position: absolute` を用いたレイアウト手法を学びました。
 -  画像を使わず、CSSのボーダーの重なりを利用して三角形（アイコン用）を描画する方法を習得しました。
 
-## 公開URL
-https://sparkseed-web.github.io/mock-TOTALLY/
+## 公開URL[
+https://sparkseed-web.github.io/mock-Travel-Blog/
